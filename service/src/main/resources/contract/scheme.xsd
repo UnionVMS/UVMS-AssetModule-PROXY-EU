@@ -1,0 +1,92 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rsm="urn:xeu:ec:fisheries:flux-bl:FLUX_FR_VesselDeclarationList:0" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:13" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:12" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12" targetNamespace="urn:xeu:ec:fisheries:flux-bl:FLUX_FR_VesselDeclarationList:0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.0">
+    <!-- ======================================================================= -->
+    <!-- ===== Imports                                                     ===== -->
+    <!-- ======================================================================= -->
+    <!-- ======================================================================= -->
+    <!-- ===== Import of Unqualified DataType Schema Module                ===== -->
+    <!-- ======================================================================= -->
+    <xsd:import namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:13" schemaLocation="http://www.unece.org/uncefact/data/standard/UnqualifiedDataType_13p0.xsd"/>
+    <!-- ======================================================================= -->
+    <!-- ===== Import of Qualified DataType Schema Module                  ===== -->
+    <!-- ======================================================================= -->
+    <xsd:import namespace="urn:un:unece:uncefact:data:standard:QualifiedDataType:12" schemaLocation="http://www.unece.org/uncefact/data/standard/QualifiedDataType_12p0.xsd"/>
+    <!-- ======================================================================= -->
+    <!-- ===== Import of Reusable Aggregate Business Information Entity Schema Module ===== -->
+    <!-- ======================================================================= -->
+    <xsd:import namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12" schemaLocation="http://www.unece.org/uncefact/data/standard/ReusableAggregateBusinessInformationEntity_12p0.xsd"/>
+    <!-- ======================================================================= -->
+    <!-- ===== Element Declarations                                        ===== -->
+    <!-- ======================================================================= -->
+    <!-- ===== Root Element Declarations                                   ===== -->
+    <!-- ======================================================================= -->
+    <xsd:element name="BasicAttribute" type="rsm:BasicAttributeType"/>
+    <!-- ================================================================== -->
+    <!-- ===== Type Definitions                                       ===== -->
+    <!-- ================================================================== -->
+    <!-- ===== Type Definition: BasicAttributeType                    ===== -->
+    <!-- ================================================================== -->
+    <xsd:complexType name="BasicAttributeType">
+        <xsd:sequence>
+            <xsd:element name="MessageID" type="udt:IDType"/>
+            <xsd:element name="Creation" type="udt:DateTimeType"/>
+            <xsd:element name="Response" type="rsm:ResponseType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!-- ================================================================== -->
+    <!-- ===== Type Definition: ResponseType                                                                  ===== -->
+    <!-- ================================================================== -->
+    <xsd:complexType name="ResponseType">
+        <xsd:sequence>
+            <xsd:element name="ReferencedMessage" type="udt:IDType"/>
+            <xsd:element name="Status" type="udt:CodeType"/>
+            <xsd:element name="StatusDescription" type="udt:TextType" minOccurs="0"/>
+            <xsd:element name="StatusDetails" type="udt:TextType" minOccurs="0"/>
+            <xsd:element name="FR-VesselDeclaration" type="rsm:FR-VesselDeclarationType" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!-- ================================================================== -->
+    <!-- ===== Type Definition: FR-VesselDeclarationType                                                 ===== -->
+    <!-- ================================================================== -->
+    <xsd:complexType name="FR-VesselDeclarationType">
+        <xsd:sequence>
+            <xsd:element name="CountryOfRegistration" type="udt:TextType"/>
+            <xsd:element name="CFR" type="udt:TextType"/>
+            <xsd:element name="EventCode" type="udt:TextType"/>
+            <xsd:element name="DateOfEvent" type="udt:TextType"/>
+            <xsd:element name="LicenceIndicator" type="udt:TextType"/>
+            <xsd:element name="RegistrationNumber" type="udt:TextType"/>
+            <xsd:element name="ExternalMarking" type="udt:TextType"/>
+            <xsd:element name="NameOfVessel" type="udt:TextType"/>
+            <xsd:element name="PortOfRegistration" type="udt:TextType"/>
+            <xsd:element name="IRCSIndicator" type="udt:TextType"/>
+            <xsd:element name="IRCS" type="udt:TextType"/>
+            <xsd:element name="VMSIndicator" type="udt:TextType"/>
+            <xsd:element name="MainFishingGear" type="udt:TextType"/>
+            <xsd:element name="SubsidiaryFishingGear" type="udt:TextType"/>
+            <xsd:element name="LOA" type="udt:TextType"/>
+            <xsd:element name="LBP" type="udt:TextType"/>
+            <xsd:element name="TonnageGT" type="udt:TextType"/>
+            <xsd:element name="OtherTonnage" type="udt:TextType"/>
+            <xsd:element name="GTs" type="udt:TextType"/>
+            <xsd:element name="PowerOfMainEngine" type="udt:TextType"/>
+            <xsd:element name="PowerOfAuxiliaryEngine" type="udt:TextType"/>
+            <xsd:element name="HullMaterial" type="udt:TextType"/>
+            <xsd:element name="YearOfCommissioning" type="udt:TextType"/>
+            <xsd:element name="MonthOfCommissioning" type="udt:TextType"/>
+            <xsd:element name="DayOfCommissioning" type="udt:TextType"/>
+            <xsd:element name="Segment" type="udt:TextType"/>
+            <xsd:element name="CountryOfImportation_Exportation" type="udt:TextType"/>
+            <xsd:element name="TypeOfExport" type="udt:TextType"/>
+            <xsd:element name="CodeForPublicAid" type="udt:TextType"/>
+            <xsd:element name="DateOfAdministrativeDecision" type="udt:TextType"/>
+            <xsd:element name="SegmentCoveredByAdministrativeDecision" type="udt:TextType"/>
+            <xsd:element name="YearOfConstruction" type="udt:TextType"/>
+            <xsd:element name="PlaceOfConstruction" type="udt:TextType"/>
+            <xsd:element name="NameOfVesselAgent" type="udt:TextType"/>
+            <xsd:element name="AddressOfVesselAgent" type="udt:TextType"/>
+            <xsd:element name="IndicatorOfOwner" type="udt:TextType"/>
+            <xsd:element name="NameOfOwner" type="udt:TextType"/>
+            <xsd:element name="AddressOfOwner" type="udt:TextType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

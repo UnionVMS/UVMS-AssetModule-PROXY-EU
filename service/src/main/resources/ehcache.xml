@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache name="euVesselProxyCacheManager"
+         monitoring="autodetect"
+         dynamicConfig="true"
+         updateCheck="false">
+
+    <defaultCache
+        maxElementsInMemory="10000"
+        eternal="false"
+        timeToIdleSeconds="1200"
+        timeToLiveSeconds="1200"
+        overflowToDisk="true"
+        diskSpoolBufferSizeMB="30"
+        maxElementsOnDisk="10000000"
+        diskPersistent="false"
+        diskExpiryThreadIntervalSeconds="1200"
+        memoryStoreEvictionPolicy="LRU" />
+
+    <cache name="messages"
+           maxElementsInMemory="10000"
+           maxElementsOnDisk="0"
+           eternal="false"
+           timeToIdleSeconds="50000"
+           timeToLiveSeconds="50000"
+           memoryStoreEvictionPolicy="LFU">
+    </cache>
+   
+
+</ehcache>

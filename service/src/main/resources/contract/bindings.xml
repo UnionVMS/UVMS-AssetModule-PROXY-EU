@@ -1,0 +1,14 @@
+<jxb:bindings version="2.1"
+              xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+              jxb:extensionBindingPrefixes="xjc">
+    <jxb:globalBindings>
+        <xjc:simple/>   
+    </jxb:globalBindings>   
+    <jxb:bindings schemaLocation="http://www.unece.org/uncefact/data/standard/UnqualifiedDataType_13p0.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="eu.europa.ec.fisheries.uvms.proxy.vessel.contract.codes"/>
+        </jxb:schemaBindings> 
+    </jxb:bindings>
+</jxb:bindings>
