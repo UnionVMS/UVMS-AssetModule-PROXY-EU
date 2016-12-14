@@ -3,7 +3,7 @@
 
     <groupId>eu.europa.ec.fisheries.uvms.proxy.vessel</groupId>
     <artifactId>eu-vessel-proxy</artifactId>
-    <version>2.1.3-SNAPSHOT</version>
+    <version>3.0.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
@@ -14,7 +14,9 @@
         <release.branch.name>uvms-2.1.3-morgoth</release.branch.name>
         <mockito.version>1.9.5</mockito.version>
         <junit.version>4.10</junit.version>
-        <asset.model.version>2.1.0</asset.model.version>
+
+        <asset.model.version>3.0.0-SNAPSHOT</asset.model.version>
+
         <jodatime.version>2.3</jodatime.version>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
