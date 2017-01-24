@@ -3,7 +3,7 @@
 
     <groupId>eu.europa.ec.fisheries.uvms.proxy.vessel</groupId>
     <artifactId>eu-vessel-proxy</artifactId>
-    <version>3.0.3-SNAPSHOT</version>
+    <version>3.0.3</version>
 
     <packaging>pom</packaging>
 
@@ -91,7 +91,7 @@
 
     <scm>
         <connection>scm:git:https://github.com/UnionVMS/UVMS-AssetModule-PROXY-EU.git</connection>
-      <tag>HEAD</tag>
+      <tag>eu-vessel-proxy-3.0.3</tag>
   </scm>
 
     
