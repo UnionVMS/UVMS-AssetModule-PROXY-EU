@@ -8,7 +8,7 @@
     <parent>
         <groupId>eu.europa.ec.fisheries.uvms.proxy.vessel</groupId>
         <artifactId>eu-vessel-proxy</artifactId>
-        <version>3.0.2-SNAPSHOT</version>
+        <version>3.0.3-SNAPSHOT</version>
     </parent>
     
     <name>${project.parent.artifactId}-module</name>
